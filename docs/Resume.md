@@ -34,11 +34,10 @@ Frameworks and tools: 	`PowerBI`,`Tableau`,` Visual Studio`,` PyCharm`, `TensorF
 
 ## WORK EXPERIENCE
 
-### Centronics Systems
-->_Hyderabad, India_
+### Centronics Systems, _Hyderabad, India_
 
 **Junior Data Scientist Intern**
-->_Feb 2020 to Mar 2021_
+_Feb 2020 to Mar 2021_
 
 - Had exposure to Data Extraction, Data Modelling, Data Wrangling, Statistical Modeling, Data Mining, Machine Learning and Data Visualization.viding structure, operating procedures, engineering tools, guidelines, and handbooks.
 - Extract, transform, and load (ETL) data from various sources for analysis using SQL and Python. Performed exploratory data analysis (EDA) to uncover patterns, trends, and outliers in datasets.
@@ -46,11 +45,10 @@ Frameworks and tools: 	`PowerBI`,`Tableau`,` Visual Studio`,` PyCharm`, `TensorF
 -  Coordinated with the sales and services team and developed a machine model that predicts demand for computer peripherals for banking sectors and this increased sales by 16%. Made an effective analysis of company investments using PowerBI and reduced expenses to maximize profits.
 
 
-### Cognizant
-->_Hyderabad, India_
+### Cognizant, _Hyderabad, India_
 
 **Informatica Data Quality Intern**
--> _Apr 2022 – Jun 2022_
+_Apr 2022 – Jun 2022_
 
 - Worked on Informatica tools like source analyzer, mapping designer, workflow manager, workflow monitor, Mapplets, Worklets and repository manager and actively worked with Type 1 SCD and Type 2 SCD. Implementation of RDBMS, MySQL, data warehouse, and ETL pipeline concepts.  
 - For the ETL pipeline, we used informatica power and the IDQ developer tool to create mappings to different source files.
