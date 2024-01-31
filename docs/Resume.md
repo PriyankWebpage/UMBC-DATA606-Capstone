@@ -1,16 +1,3 @@
-name: Haha Ha
-header:
-  - text: <span class="iconify" data-icon="tabler:phone"></span> (+1) 123-456-7890
-  - text: <span class="iconify" data-icon="tabler:mail"></span> renovamenzxh@gmail.com
-    link: mailto:renovamenzxh@gmail.com
-  - text: <span class="iconify" data-icon="tabler:brand-github"></span> Renovamen
-    link: https://github.com/Renovamen
-  - text: <span class="iconify" data-icon="tabler:brand-linkedin"></span> xiaohan-zou
-    link: https://www.linkedin.com/in/xiaohan-zou/
-  - text: <span class="iconify" data-icon="charm:person"></span> zxh.io
-    link: https://zxh.io
-  - text: <span class="iconify" data-icon="ic:outline-location-on"></span> 1234 Abc Street, Boston, MA 02215
-    newLine: true
 
 # **PRIYANK SAI PANNEM**
 
@@ -20,7 +7,7 @@ Email: **<priyank2000123@gmail.com>** || Phone: **+1 443-825-9077** ||  https://
 
 ### University of Maryland Baltimore County
 
-~ _Aug 2022 - May 2024_
+  ~ _Aug 2022 - May 2024_
 
 **Master of Professional Studies, Data Science (CGPA: 3.9/4)**,  Baltimore County, Maryland
 
@@ -31,6 +18,7 @@ Email: **<priyank2000123@gmail.com>** || Phone: **+1 443-825-9077** ||  https://
 **Bachelor of Technology, Computer Science (CGPA: 3.49/4)**,  Hyderabad, India
 
 ## SKILLS
+
 Programming Languages: 	`Python`,`R`,` C`,` C++`,`Java`, `JavaScript`,` PySpark`
 
 Web technologies:	`HTML5`,` CSS`,` Node.js`,` ReactJS`,` JavaScript`,` Bootstrap`,` Express.js` , ` jQuery`
