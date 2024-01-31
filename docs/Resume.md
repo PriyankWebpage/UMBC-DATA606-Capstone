@@ -14,7 +14,7 @@
 ## Skills
 Programming Languages: 	`Python`,`R`,` C`,` C++`,`Java`, `JavaScript`,` PySpark`
 
-Web technologies:	`HTML5`,` CSS`,` Node.js`,` ReactJS`,` JavaScript`,` Bootstrap`,` Express.js, jQuery`
+Web technologies:	`HTML5`,` CSS`,` Node.js`,` ReactJS`,` JavaScript`,` Bootstrap`,` Express.js` , ` jQuery`
 
 Databases:	`MySQL`,` MongoDB (NoSQL)`
 
