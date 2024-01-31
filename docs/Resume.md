@@ -13,8 +13,11 @@
 
 ## Skills
 Programming Languages: 	`Python`,`R`,` C`,` C++`,`Java`, `JavaScript`,` PySpark`
+
 Web technologies:	`HTML5`,` CSS`,` Node.js`,` ReactJS`,` JavaScript`,` Bootstrap`,` Express.js, jQuery`
+
 Databases:	`MySQL`,` MongoDB (NoSQL)`
+
 Frameworks and tools: 	`PowerBI`,`Tableau`,` Visual Studio`,` PyCharm`, `TensorFlow`, `Flutter`
 
 ## Certifications
