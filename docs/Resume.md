@@ -1,6 +1,6 @@
-PRIYANK SAI PANNEM
+# **PRIYANK SAI PANNEM**
 ============
-||: Email: **<priyank2000123@gmail.com>** || Phone: **+1 443-825-9077** ||  https://www.linkedin.com/in/priyankpannem||
+Email: **<priyank2000123@gmail.com>** || Phone: **+1 443-825-9077** ||  https://www.linkedin.com/in/priyankpannem||
 
 ## EDUCATION
 
