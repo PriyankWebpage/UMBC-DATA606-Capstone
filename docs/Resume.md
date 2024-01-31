@@ -11,9 +11,7 @@ Email: **<priyank2000123@gmail.com>** || Phone: **+1 443-825-9077** ||  https://
 
 **Master of Professional Studies, Data Science (CGPA: 3.9/4)**,  Baltimore County, Maryland
 
-### Anurag Group of Instutions
-
-->_Aug 2018 - Jun 2022_
+### Anurag Group of Instutions                                                                      ->_Aug 2018 - Jun 2022_
 
 **Bachelor of Technology, Computer Science (CGPA: 3.49/4)**,  Hyderabad, India
 
