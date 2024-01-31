@@ -1,12 +1,12 @@
 # **PRIYANK SAI PANNEM**
 
-Email: **<priyank2000123@gmail.com>** || Phone: **+1 443-825-9077** ||  https://www.linkedin.com/in/priyankpannem||
+Email: **<priyank2000123@gmail.com>** || Phone: **+1 443-825-9077** ||  https://www.linkedin.com/in/priyankpannem 
 
 ## EDUCATION
 
 ### University of Maryland Baltimore County
 
-->_Aug 2022 - May 2024_
+~ _Aug 2022 - May 2024_
 
 **Master of Professional Studies, Data Science (CGPA: 3.9/4)**,  Baltimore County, Maryland
 
