@@ -60,6 +60,7 @@ _Apr 2022 – Jun 2022_
 
 ### Analysis of Used Cars Ads in Russia 
 _Technology Stack: PySaprk, RDDs, Spark SQL, Pandas UDFs, Seaborn, Matplotlib_
+
 _Link :https://github.com/PriyankWebpage/Projects/tree/main/Big%20Data_
 - Worked on the dateset of used cars that are listed on the Russian reselling websites. Made data analysis on Databricks spark platform that involves 
 examining various factors such as condition, model, age, mileage and brand loyalty. 
@@ -71,6 +72,7 @@ examining various factors such as condition, model, age, mileage and brand loyal
 
 ### Sentiment Forecasting for Movie Reviews using Machine Learning
 _Technology Stack:_
+
 _Link:https://github.com/PriyankWebpage/Projects/tree/main/ML_
 - Worked on dataset containing favorable and negative comments. Used data cleaning techniques like text lemmatization and removed stop words.
 - Implemented Tfid Vectorizer to measure the importance of a word in a particular review relative to its frequency across all reviews.
