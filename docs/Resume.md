@@ -1,7 +1,7 @@
 # **PRIYANK SAI PANNEM**
 ||: Email: **<priyank2000123@gmail.com>** || Phone: **+1 443-825-9077** ||  https://www.linkedin.com/in/priyankpannem||
 
-## Education
+## EDUCATION
 
 ### University of Maryland Baltimore County
 
@@ -15,7 +15,7 @@
 
 **Bachelor of Technology, Computer Science (CGPA: 3.49/4)**,  Hyderabad, India
 
-## Skills
+## SKILLS
 Programming Languages: 	`Python`,`R`,` C`,` C++`,`Java`, `JavaScript`,` PySpark`
 
 Web technologies:	`HTML5`,` CSS`,` Node.js`,` ReactJS`,` JavaScript`,` Bootstrap`,` Express.js` , ` jQuery`
@@ -24,13 +24,13 @@ Databases:	`MySQL`,` MongoDB (NoSQL)`
 
 Frameworks and tools: 	`PowerBI`,`Tableau`,` Visual Studio`,` PyCharm`, `TensorFlow`, `Flutter`
 
-## Certifications
+## CERTIFICATIONS
 - MTA: Introduction to Programming Using Python
 - Programming, Data Structures and Algorithms with Python - NPTEL
 - Secured B1 in Business English Communication (BEC) - Preliminary level
 
 
-## Work Experience
+## WORK EXPERIENCE
 
 ### Centronics Systems
 ->_Hyderabad, India_
@@ -54,7 +54,7 @@ Frameworks and tools: 	`PowerBI`,`Tableau`,` Visual Studio`,` PyCharm`, `TensorF
 - For the ETL pipeline, we used informatica power and the IDQ developer tool to create mappings to different source files.
 
 
-## Project
+## PROJECT
 
 ### Analysis of Used Cars Ads in Russia 
 _Technology Stack: PySaprk, RDDs, Spark SQL, Pandas UDFs, Seaborn, Matplotlib_
