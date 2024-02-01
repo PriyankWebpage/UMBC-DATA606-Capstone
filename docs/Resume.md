@@ -93,6 +93,9 @@ _Link: https://github.com/PriyankWebpage/Projects/tree/main/DL_
 ## LEADERSHIP AND VOLUNTEER
 - I represented as the president of a student club during my under graduation and I took the responsibility to empathize with the juniors and designed a pathway with a vision to become a professional web developer. I was an event planner of the computer science department in my college, involved in planning and organizing technical & non-technical events at college with precise budget estimation.
 
-
+## PERSONAL INTERESTS
+- As a tech enthusiast I'm interested in developing Artificial intelligent systems, creating algorithms, and exploring the potential applications of these technologies.
+- I also enjoy working with big data, creating data visualizations, and deriving insights from complex datasets.
+- I'm huge web surfer to explore new technologies  
 ---
 
