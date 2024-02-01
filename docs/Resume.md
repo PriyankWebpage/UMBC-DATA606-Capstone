@@ -61,7 +61,7 @@ _Apr 2022 – Jun 2022_
 ### Analysis of Used Cars Ads in Russia 
 _Technology Stack: PySaprk, RDDs, Spark SQL, Pandas UDFs, Seaborn, Matplotlib_
 
-_Link :https://github.com/PriyankWebpage/Projects/tree/main/Big%20Data_
+_Link: https://github.com/PriyankWebpage/Projects/tree/main/Big%20Data_
 - Worked on the dateset of used cars that are listed on the Russian reselling websites. Made data analysis on Databricks spark platform that involves 
 examining various factors such as condition, model, age, mileage and brand loyalty. 
 - The objective of project is to find the cars that can be rebuilt and set good margins to the car rebuilding firms. 
@@ -71,20 +71,22 @@ examining various factors such as condition, model, age, mileage and brand loyal
 
 
 ### Sentiment Forecasting for Movie Reviews using Machine Learning
-_Technology Stack:_
+_Technology Stack:_ TfidfVectorizer, KMeans, NearestNeighbors, Python, Pnadas_
 
-_Link:https://github.com/PriyankWebpage/Projects/tree/main/ML_
+_Link: https://github.com/PriyankWebpage/Projects/tree/main/ML_
 - Worked on dataset containing favorable and negative comments. Used data cleaning techniques like text lemmatization and removed stop words.
 - Implemented Tfid Vectorizer to measure the importance of a word in a particular review relative to its frequency across all reviews.
 - Used semi-supervised learning and picked few labeled data using k-means clustering and train against logistic regression model and achieved an accuracy of 80%.
 
 ### License Plate Detection	
-_Technology Stack: Python, Seaborn,Matplotlib,Pandas,Numpy,Tensorflow._
+_Technology Stack: Python, Seaborn,Matplotlib,Pandas,Numpy,Tensorflow_
 
+_Link: https://github.com/PriyankWebpage/Projects/tree/main/DL_
 - Developed a system that captures the image of the vehicle and extracts the license number upon detecting the number plate. 
 - Designed a custom deep neural network architecture based on Convolutional Neural Networks (CNN) for accurate license plate recognition.
 - Integrated License plate detecting system with a database to keep track of vehicles that enter a community, this solves the problem of unauthorized vehicles entering the community. 
 - Conducted rigorous testing and performance evaluations, achieving an accuracy rate of 95% on the test dataset.
+
 
 ## LEADERSHIP AND VOLUNTEER
 - I represented as the president of a student club during my under graduation and I took the responsibility to empathize with the juniors and designed a pathway with a vision to become a professional web developer. I was an event planner of the computer science department in my college, involved in planning and organizing technical & non-technical events at college with precise budget estimation.
