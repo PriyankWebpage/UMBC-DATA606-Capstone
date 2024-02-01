@@ -3,6 +3,8 @@
 
 Email: **<priyank2000123@gmail.com>** || Phone: **+1 443-825-9077** ||  https://www.linkedin.com/in/priyankpannem 
 
+![Your Name](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/blob/main/docs/Passport%20Size%20Photo.jpeg)
+
 ## EDUCATION
 
 ### University of Maryland Baltimore County
