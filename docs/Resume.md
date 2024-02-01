@@ -71,7 +71,7 @@ examining various factors such as condition, model, age, mileage and brand loyal
 
 
 ### Sentiment Forecasting for Movie Reviews using Machine Learning
-_Technology Stack:_ TfidfVectorizer, KMeans, NearestNeighbors, Python, Pnadas_
+_Technology Stack: TfidfVectorizer, KMeans, NearestNeighbors, Python, Pnadas_
 
 _Link: https://github.com/PriyankWebpage/Projects/tree/main/ML_
 - Worked on dataset containing favorable and negative comments. Used data cleaning techniques like text lemmatization and removed stop words.
