@@ -47,7 +47,23 @@ The objective is to build a machine learning model capable of accurately predict
 
 # 3. About Dataset
 
-Data Sources: [Wine Quality Prediction](https://www.kaggle.com/datasets/subhajournal/wine-quality-data-combined)
+- Data Sources: [Wine Quality Prediction](https://www.kaggle.com/datasets/subhajournal/wine-quality-data-combined)
+- Data size: 2.43 MB
+Data shape:
+
+WineQuality.csv - 32486 rows, 14 columns
+
+### What does each row represent?
+
+The data contains 13 wine features or ingredients based upon which the quality or the types of wine can be predicted. Each row in the dataset represents various chemical properties of wine sample such as chlorides, pH, density, etc.
+
+### 
+
+| Column Name | Data type | Defition | Potential values |
+|-----------------|-----------------|-----------------|
+| Row 1, Column 1 | Row 1, Column 2 | Row 1, Column 3 |
+| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3 |
+
 
 
 
