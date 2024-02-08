@@ -16,7 +16,7 @@ Priyank Sai Pannem
 
 GitHub Profile: https://github.com/PriyankWebpage
 
-Linkedin Profile: https:www.linkedin.com/in/priyankpannem
+Linkedin Profile: https://www.linkedin.com/in/priyankpannem
 
 # 2. Background
 
