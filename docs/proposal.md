@@ -72,8 +72,8 @@ The data contains 12 wine features or ingredients based upon which the quality o
 |pH| Numerical | The pH level determines the acidity or basicity of the wine. | |
 |Sulphates| Numerical |Sulphates contribute to the wine's antioxidant properties and may affect its taste. | |
 |Alcohol| Numerical | The alcohol content is an important factor contributing to the overall balance and taste of the wine.. | |
-|Type| Categorical | The fixed acidity of a wine, determined by titration, contributes to its overall taste. |Red Wine, White Wine |
-|Quality| Numerical | The fixed acidity of a wine, determined by titration, contributes to its overall taste. | |
+|Type| Categorical | Type of wine |Red Wine, White Wine |
+|Quality| Numerical | The quality of wine is rated on a scale from 1 to 10, with higher values indicating better quality. | |
 
 
 
