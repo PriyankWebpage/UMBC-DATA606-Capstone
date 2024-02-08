@@ -75,6 +75,7 @@ The data contains 12 wine features or ingredients based upon which the quality o
 |Type| Categorical | Type of wine |Red Wine, White Wine |
 |Quality| Numerical | The quality of wine is rated on a scale from 1 to 10, with higher values indicating better quality. | |
 
-
-
-
+### Which variable/column will be your target/label in your ML model?
+- Quality
+### Which variables/columns may be selected as features/predictors for your ML models?
+- 
