@@ -55,28 +55,25 @@ WineQuality.csv - 32486 rows, 14 columns
 
 ### What does each row represent?
 
-The data contains 13 wine features or ingredients based upon which the quality or the types of wine can be predicted. Each row in the dataset represents various chemical properties of wine sample such as chlorides, pH, density, etc.
+The data contains 12 wine features or ingredients based upon which the quality or the types of wine can be predicted. Each row in the dataset represents various chemical properties of wine sample such as chlorides, pH, density, etc.
 
 ### 
 
 | Column Name | Data type | Defition | Potential values |
 |-----------------|-----------------|-----------------|-----------------|
-|fixed acidity| Numerical | The fixed acidity of a wine, determined by titration, contributes to its overall taste. | Row 1, Column 3 |
-| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3 | Row 1, Column 3 |
-| Row 1, Column 1 | Row 1, Column 2 | Row 1, Column 3 | Row 1, Column 3 |
-| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3 | Row 1, Column 3 |
-| Row 1, Column 1 | Row 1, Column 2 | Row 1, Column 3 | Row 1, Column 3 |
-| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3 | Row 1, Column 3 |
-| Row 1, Column 1 | Row 1, Column 2 | Row 1, Column 3 | Row 1, Column 3 |
-| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3 | Row 1, Column 3 |
-| Row 1, Column 1 | Row 1, Column 2 | Row 1, Column 3 | Row 1, Column 3 |
-| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3 | Row 1, Column 3 |
-| Row 1, Column 1 | Row 1, Column 2 | Row 1, Column 3 | Row 1, Column 3 |
-| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3 | Row 1, Column 3 |
-| Row 1, Column 1 | Row 1, Column 2 | Row 1, Column 3 | Row 1, Column 3 |
-| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3 | Row 1, Column 3 |
-
-
+|Fixed acidity| Numerical | The fixed acidity of a wine, determined by titration, contributes to its overall taste. | |
+|Volatile acidity| Numerical | The volatile acidity gives a sour taste to wine and in excess, can lead to an unpleasant vinegar taste. | |
+|Citric acid| Numerical |Citric acid is responsible for adding freshness and flavor to wines. | |
+|Residual Sugar| Numerical |  Residual sugar refers to the amount of sugar left after fermentation and influences the sweetness of the wine. | |
+|Chlorides| Numerical | Chloride concentration can affect the wine's taste and aroma.| |
+|Free sulfur dioxide| Numerical |Sulfur dioxide is used as a preservative in winemaking and can influence the wine's aroma and flavor. | |
+|Total sulfur dioxide| Numerical | The total amount of sulfur dioxide present in the wine. | |
+|Density| Numerical | The density of wine is related to its alcohol content and can indicate its richness. | |
+|pH| Numerical | The pH level determines the acidity or basicity of the wine. | |
+|Sulphates| Numerical |Sulphates contribute to the wine's antioxidant properties and may affect its taste. | |
+|Alcohol| Numerical | The alcohol content is an important factor contributing to the overall balance and taste of the wine.. | |
+|Type| Numerical | The fixed acidity of a wine, determined by titration, contributes to its overall taste. | |
+|Quality| Numerical | The fixed acidity of a wine, determined by titration, contributes to its overall taste. | |
 
 
 
