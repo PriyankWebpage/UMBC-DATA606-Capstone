@@ -60,9 +60,9 @@ The data contains 13 wine features or ingredients based upon which the quality o
 ### 
 
 | Column Name | Data type | Defition | Potential values |
-|-----------------|-----------------|-----------------|
-| Row 1, Column 1 | Row 1, Column 2 | Row 1, Column 3 |
-| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3 |
+|-----------------|-----------------|-----------------|-----------------|
+| Row 1, Column 1 | Row 1, Column 2 | Row 1, Column 3 | Row 1, Column 3 |
+| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3 | Row 1, Column 3 |
 
 | Left-aligned | Center-aligned | Right-aligned |
 |:-------------|:--------------:|--------------:|
