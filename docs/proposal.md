@@ -49,7 +49,7 @@ The objective is to build a machine learning model capable of accurately predict
 
 - Data Sources: [Wine Quality Prediction](https://www.kaggle.com/datasets/subhajournal/wine-quality-data-combined)
 - Data size: 2.43 MB
-Data shape:
+- Data shape:
 
 WineQuality.csv - 32486 rows, 14 columns
 
