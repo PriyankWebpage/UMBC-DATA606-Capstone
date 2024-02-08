@@ -37,8 +37,17 @@ The objective is to build a machine learning model capable of accurately predict
 
 ### What are your research questions?
 
-Which physicochemical and sensory attributes have the most significant impact on wine quality?
+1. Which physicochemical and sensory attributes have the most significant impact on wine quality?
 
-How do different combinations of features contribute to the overall perception of wine quality?
+2. How do different combinations of features contribute to the overall perception of wine quality?
+
+3. How do various machine learning algorithms compare in terms of their ability to predict wine quality accurately?
+
+4. What is the optimal model architecture or ensemble approach for wine quality prediction?
+
+# 3. About Dataset
+
+Data Sources: [Wine Quality Prediction](https://www.kaggle.com/datasets/subhajournal/wine-quality-data-combined)
+
 
 
