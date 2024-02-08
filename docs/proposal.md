@@ -78,4 +78,4 @@ The data contains 12 wine features or ingredients based upon which the quality o
 ### Which variable/column will be your target/label in your ML model?
 - Quality
 ### Which variables/columns may be selected as features/predictors for your ML models?
-- 
+- Fixed acidity, Volatile acidity ,Citric acid, Residual,Sugar, Chlorides, Free sulfur dioxide, Total sulfur dioxide, Density, pH,Sulphates, Alcohol, Type
