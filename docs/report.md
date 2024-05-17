@@ -22,6 +22,10 @@ GitHub Profile: [PriyankWebpage](https://github.com/PriyankWebpage)
 
 Linkedin Profile: [Priyank Pannem](https://www.linkedin.com/in/priyankpannem)
 
+YouTube Video: 
+
+Presentation :
+
 # 2. Background
 
 In the field of viticulture and oenology, wine quality is a critical factor in determining market value and customer happiness. Winemakers are continuously looking for ways to improve and preserve the quality of their goods. To this purpose, predictive modeling may be used to forecast wine quality based on physicochemical and sensory characteristics.
