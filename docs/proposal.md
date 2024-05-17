@@ -1,5 +1,5 @@
 
-<img width="787" alt="Main" src="https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/7be5bb19-3c5e-47cb-be02-9c30f8a167c4">
+<img width="1000" alt="Main" src="https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/7be5bb19-3c5e-47cb-be02-9c30f8a167c4">
 
 
 # 1. Title and Author
