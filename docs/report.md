@@ -147,7 +147,158 @@ Summary statistics table of various features related to wine quality.
   ## 4.2 Data Preprocessing
   
   For a number of reasons, standardizing the data in the wine dataset is essential. First of all, it guards against biases favoring variables with wider ranges or units by guaranteeing that variables with varying scales and units contribute equally to the study. Second, standardization makes it simpler to compare and understand coefficients in statistical models, which in turn makes determining the relative significance of various characteristics easier. Additionally, by lessening the influence of outliers and enhancing convergence, standardizing the data can enhance the effectiveness of machine learning systems. Standardized coefficients, which indicate the change in the response variable per standard deviation change in the predictor, further improve the interpretability of the results. Overall, standardizing the data in the wine dataset enhances the reliability, interpretability, and generalizability of analyses and model, thus preventing data skewness that might be caused by the range of values.
+
+  ## 4.3 Plots
+
+     ### 4.3.1 Correalation Heat Map
+      
+  ![corr](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/cf3f8ee9-ecb5-4517-aa74-6f7110665770)
+
+    **Summary Insights**
+    - From the above correlation matrix it is observed no two independent variables are highly corealted with eachother as all the co realtional values are less than 0.75
+    - This shows there is no sign of multicollinearity, with this we can move forward without eliminating any columns.
+      
+ 
+      ### 4.3.2 Density Plots
+      
+      ![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/209047fd-c9c2-4f1c-baf7-83a0a70df4e2)
+     **Summary Insights**
+      - The plot is a series of density plots for various features of a dataset, likely related to wine characteristics given the labels. Each subplot shows the distribution of a specific variable. Here's a detailed explanation of each subplot:
+
+        **Fixed Acidity:**
+        - Most wines have a fixed acidity between 6 and 8, with a prominent peak around 7. This suggests a common range for this characteristic in the dataset.
+        
+        **Volatile Acidity:**
+        - The majority of wines have volatile acidity around 0.3, indicating that high volatile acidity levels are less common. Lower volatile acidity is likely preferred as higher levels can negatively impact taste.
+    
+        **Citric Acid:**
+      
+        - The bimodal distribution suggests there are two common levels of citric acid in wines: one near 0 and another around 0.5. This may reflect different styles or types of wine.
+    
+        **Residual Sugar:**
+        
+        - The skewness indicates that most wines have low residual sugar levels, but there are a few with significantly higher levels, potentially indicating sweet wines or dessert wines.
+        
+        **Chlorides:**
+        
+        - Most wines have low chloride levels, centered around 0.05. High chloride levels are rare, which is positive since high chloride can indicate poor quality.
+        
+        **Free Sulfur Dioxide:**
+        
+        - There is a concentration around 30 mg/L, with fewer wines having higher levels. Proper sulfur dioxide levels are             crucial for preventing spoilage and oxidation.
+        
+        **Total Sulfur Dioxide:**
+        
+        - A peak around 150 mg/L shows where most wines fall, but a wide distribution suggests varied winemaking practices regarding sulfur dioxide usage.
+        
+        **Density:**
+        
+        - Density values are tightly clustered around 0.99 to 1.0, indicating consistency in the wine’s composition, primarily due to the alcohol and sugar content.
+        
+        **pH:**
+        
+        - The nearly normal distribution around 3.2 indicates most wines have a balanced pH, which is important for stability and taste.
+        
+        **Sulphates:**
+        
+        - Most wines have sulphate levels around 0.5, which can contribute to the antimicrobial and antioxidant properties in wine.
+        
+        **Alcohol:**
+        
+        - The distribution shows several peaks, with the most common alcohol content around 9.5%, but a wide range up to 15%. This reflects the diversity in wine styles and strength.
+        
+        
+        **Quality:**
+        
+        - Quality ratings show distinct peaks at 5, 6, and 7, suggesting that these are the most common quality ratings in the dataset. This indicates that the majority of wines are rated around average to slightly above average quality.
+        
+        Overall, these plots provide a comprehensive overview of the distribution of each feature in the dataset, highlighting the central tendencies, variability, and presence of outliers.
+
+### 4.3.3 Pair Plots
+
+  ![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/b6db0cb2-2a09-4cff-910c-5fa323f03144)
   
+  **Summary Insights**
+  
+  - 1(Orange) indicates white wine
+
+  - 0(Blue) indicates red wine
+
+### 4.3.4 Box Plots
+  ![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/e2fe603d-f9d8-42e0-b2fd-61f4794f0b05)
+
+  **Summary Insights**
+
+- Type 1 represents **White Wine**
+
+- Type 0 represents **Red Wine**
+
+- White Wine generally exhibits higher values for volatile acidity, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, and alcohol content compared to Red Wine.
+
+- Red Wine tends to have higher fixed acidity and citric acid content.
+
+- Features like density and quality do not show significant differences between the two types, indicating they might not be strong differentiators.
+
+- White Wine often shows greater variability in many features, suggesting a broader range of values within this type.
+
+### 4.3.5 Distribution of Wine Quality
+
+![dist](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/151d54ec-55b3-4439-affa-98530c3d9437)
+
+  **Summary Insights**
+
+- The output shows the distribution of wine quality ratings in the dataset. Each quality rating (ranging from 3 to 9) has a corresponding count of how many instances in the dataset have that rating.
+
+- In this case, it's evident that the dataset is imbalanced, meaning that some quality ratings are much more prevalent than others. For example:
+
+- Quality ratings of 5 and 6 are the most common, with 10,755 and 14,117 instances, respectively.
+
+- Quality ratings of 3, 4, 8, and 9 are relatively rare, with counts ranging from 24 to 1,144 instances.
+
+- Imbalanced data can pose challenges for machine learning models, especially for classification tasks, as they might become biased towards the majority class.
+
+### 4.3.6 Percentage of Best Quality Categories
+  
+  ![pichart](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/f7bbd46f-63f2-4b47-bbce-7f579e352bb4)
+ **Summary Insights**
+  
+- "Good quality": 63%
+
+- "Poor quality": 37%
+
+- While it's clear that the dataset is not perfectly balanced (i.e., the proportions are not exactly 50/50).
+
+- In many cases, a slight imbalance like this may not significantly impact the analysis, particularly if the class imbalance is not severe and the chosen machine learning algorithms can handle it effectively.
+
+### 4.3.7 Stacked Bar Plot of Quality by Type
+
+![newplot](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/fd89c85f-8b6c-43b6-ab6e-b65c7144823b)
+
+**Summary of Insights:**
+
+- White wines dominate the dataset and are most commonly rated at 5 and 6, but they also have a notable presence at the lower quality ratings.
+
+- Red wines are fewer in number but tend to score higher quality ratings, especially at the top end (7 and 8).
+
+- Quality ratings of 5, 6, and 7 cover the majority of the wines, with White wines being more common in this range, particularly at 5 and 6.
+
+### 4.3.8 Mean and Median Alcohol Content by Quality
+
+![newplot1](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/ea08cdbf-2cfd-4b8a-99ae-e4d00924cef6)
+
+**Summary of Insights:**
+
+- There is a clear trend showing that higher quality wines have higher alcohol content.
+
+- The close alignment of mean and median values across most quality ratings suggests a balanced distribution of alcohol content within each category.
+
+- The increasing trend in alcohol content from lower to higher quality ratings indicates that alcohol content could be a significant factor in determining the quality of wine.
+
+- These insights can help in understanding the relationship between alcohol content and perceived quality of wine, suggesting that wines with higher alcohol content tend to be rated higher in quality.
+
+
+
+        
 # 5. Model Training
 
 ### 5.1. Models used for Predictive Analytics
