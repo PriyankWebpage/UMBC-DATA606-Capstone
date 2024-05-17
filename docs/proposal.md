@@ -85,9 +85,9 @@ The data contains 12 wine features or ingredients based upon which the quality o
 - Fixed acidity, Volatile acidity ,Citric acid, Residual,Sugar, Chlorides, Free sulfur dioxide, Total sulfur dioxide, Density, pH,Sulphates, Alcohol, Type
 
 # 4.Exploratory Data Analysis (EDA)
-## Data Cleaning
+## 4.1 Data Cleaning
 
-###  a. Check on Missing values
+###  4.1.1 Check on Missing values
 | Variable              | No. of Null Values |
 |-----------------------|-------|
 | fixed acidity         | 0     |
@@ -104,7 +104,7 @@ The data contains 12 wine features or ingredients based upon which the quality o
 | quality               | 0     |
 | Type                  | 0     |
 - From the above data we can say that there are no signs of null values in the data set
-### b. Summary Statistics
+### 4.1.2 Summary Statistics
 | Statistics | fixed acidity | volatile acidity | citric acid | residual sugar | chlorides | free sulfur dioxide | total sulfur dioxide | density | pH   | sulphates | alcohol | quality | Type |
 |-----------|---------------|------------------|-------------|----------------|-----------|---------------------|----------------------|---------|------|-----------|---------|---------|------|
 | count     | 32485.000000  | 32485.000000     | 32485.00000 | 32485.000000   | 32485.000 | 32485.000000        | 32485.000000         | 32485.00| 32485| 32485.000 | 32485.00| 32485.00| 32485|
@@ -144,28 +144,34 @@ Summary statistics table of various features related to wine quality.
 
 - **Type:** This column indicates the type of wine, with 1(White wine) representing one type and 0(Red wine) representing another type. The majority of the samples seem to belong to type 1, as indicated by the mean value being close to 1.
 
-  ## Data Preprocessing
+  ## 4.2 Data Preprocessing
   
   For a number of reasons, standardizing the data in the wine dataset is essential. First of all, it guards against biases favoring variables with wider ranges or units by guaranteeing that variables with varying scales and units contribute equally to the study. Second, standardization makes it simpler to compare and understand coefficients in statistical models, which in turn makes determining the relative significance of various characteristics easier. Additionally, by lessening the influence of outliers and enhancing convergence, standardizing the data can enhance the effectiveness of machine learning systems. Standardized coefficients, which indicate the change in the response variable per standard deviation change in the predictor, further improve the interpretability of the results. Overall, standardizing the data in the wine dataset enhances the reliability, interpretability, and generalizability of analyses and model, thus preventing data skewness that might be caused by the range of values.
   
 # 5. Model Training
 
-### a. models used for predictive analytics
-- Logistic Regression
-- XGboost
-- Random Forest
+### 5.1. Models used for Predictive Analytics
 
-### b. Packages Used:
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Plotly
-- Scikit-learn
-- XGBoost
+  - Logistic Regression
+  - XGboost
+  - Random Forest
 
-### c. Model workflow
-The wine quality prediction model follows a systematic machine learning workflow to ensure robust and accurate predictions. Here is a summary of the key steps involved:
+### 5.2 Packages Used
+  - Pandas
+  - NumPy
+  - Matplotlib
+  - Seaborn
+  - Plotly
+  - Scikit-learn
+  - XGBoost
+
+### 5.3 Development Environments
+  - VS Code
+  - Anaconda
+  - GitHub
+
+### 5.4 Model workflow
+  - The wine quality prediction model follows a systematic machine learning workflow to ensure robust and accurate predictions. Here is a summary of the key steps involved:
 
 **Data Splitting:**
 
@@ -178,9 +184,9 @@ Various machine learning algorithms are tested within this pipeline to identify 
 
 **Model Selection:**
 
-  **a. Logistic Regression**
+  **5.4.1 Logistic Regression**
   
- - Logistic regression can be effectively used for wine quality prediction by modeling the relationship between various features (such as acidity, sugar content, pH, etc.) and the binary target variable indicating wine quality (e.g., good or poor quality). As a binary classifier, logistic regression estimates the probability that a given wine sample belongs to a particular quality class. The model applies the logistic function to a linear combination of input features, producing an output between 0 and 1, which can be interpreted as the probability of the wine being of good quality.
+   - Logistic regression can be effectively used for wine quality prediction by modeling the relationship between various features (such as acidity, sugar content, pH, etc.) and the binary target variable indicating wine quality (e.g., good or poor quality). As a binary classifier, logistic regression estimates the probability that a given wine sample belongs to a particular quality class. The model applies the logistic function to a linear combination of input features, producing an output between 0 and 1, which can be interpreted as the probability of the wine being of good quality.
 
   **Classification Report on Training Data**
 
@@ -234,7 +240,7 @@ Various machine learning algorithms are tested within this pipeline to identify 
 
 - An AUC score of 0.81 suggests that the model has some predictive capability, but further optimization or adjustments may be necessary to enhance its performance, especially aming at higher accuracy.
 
-**b. XGBClassifier**
+**5.4.2 XGBClassifier**
 
 XGBoost Classifier (XGBClassifier) can estimate wine quality using its sophisticated gradient boosting method. Initially, the dataset goes through preparation stages including managing missing values and encoding categorical variables. The XGBClassifier model is then trained using features such as acidity, sugar content, and pH. During training, XGBoost iteratively constructs numerous decision trees, each fixing the faults of the preceding one. It improves the model's performance by minimizing a predetermined loss function, therefore efficiently capturing complicated patterns in the data. The model's hyperparameters, such as the learning rate and maximum tree depth, may be fine-tuned using approaches such as GridSearchCV to improve forecast accuracy. Finally, the trained XGBClassifier can reliably determine the quality of wines based on their chemical makeup.
 
@@ -286,7 +292,7 @@ XGBoost Classifier (XGBClassifier) can estimate wine quality using its sophistic
 
   - AUC score of 0.9713 implies that the model has a high true positive rate while maintaining a low false positive rate across different threshold settings. This indicates that the model is performing exceptionally well in correctly classifying instances of both classes and is making very few mistakes in misclassifying instances.
 
-  ### c. Random Forest Classifier
+  **5.4.3 Random Forest Classifier**
   - The Random Forest Classifier uses ensemble learning to estimate wine quality. Initially, the dataset is preprocessed to accommodate missing values and encode categorical characteristics. The Random Forest model is then trained using characteristics such as acidity, sugar concentration, and pH. During training, the classifier generates numerous decision trees from random subsets of the data and features, guaranteeing variety and decreasing overfitting. Each tree separately forecasts wine quality, and the ultimate prediction is established by pooling all trees' votes. The model's hyperparameters, such as the number of trees and maximum depth, may be tuned using GridSearchCV. Overall, the Random Forest Classifier provides robust and reliable predictions about wine quality based on its chemical makeup.
 
 **Classification Report on Training Data**
@@ -310,7 +316,7 @@ XGBoost Classifier (XGBClassifier) can estimate wine quality using its sophistic
 | Macro Avg | 1.00      | 0.99   | 1.00     | 9746    |
 | Weighted Avg | 1.00   | 1.00   | 1.00     | 9746    |
 
-### Confusion Matrix of Random Forest Classifier
+**Confusion Matrix of Random Forest Classifier**
 ![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/a9fff0c7-15b5-4ac5-a5ad-f6ce5a60b0a7)
 
   - **True Positives (TP):** 6119
@@ -331,7 +337,7 @@ XGBoost Classifier (XGBClassifier) can estimate wine quality using its sophistic
   
     This confusion matrix still demonstrates a highly accurate model with very few misclassifications. It effectively identifies both "good quality" and "poor quality" wines, with only a small number of false positives and false negatives. Overall, the model appears to be reliable for classifying wine quality.
 
-### Area under the Curve
+**Area under the Curve**
 
 ![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/6e5ea8f0-b689-47d8-be3b-8873dc84c483)
 
@@ -352,5 +358,49 @@ XGBoost Classifier (XGBClassifier) can estimate wine quality using its sophistic
 
 This structured approach ensures that the wine quality prediction model is robust, well-tuned, and capable of making accurate predictions on new data.
 
+## 6. Web Application 
+
+- Created a web application on Streamlit to monitor and improve the quality of wine production can provide numerous benefits across different stages of the wine-making process.
+- Streamlit is an excellent tool for creating interactive web applications for machine learning models. For wine quality prediction, I developed a Streamlit app that allows users to input various chemical properties of the wine (such as fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol). The app then uses a user trained machine learning model to predict the quality of the wine.
+- To build the app,I installed Streamlit. Saved my trained model (e.g., a RandomForestClassifier) as pickle file. Later created a Streamlit app (app.py) that loads this model and provides an input form for the user to enter the wine's properties. When the user submits the form, the app will display the predicted wine quality. This approach offers an accessible interface for users to leverage machine learning models for wine quality prediction without needing extensive technical knowledge.
+- The below image gives the idea how user can interact with the web application. After user enters the values of chemical features of the wine sample and clicks on predict then this data is sent to the model where the model will predict wheather the given wine sample is good or bad quality.
+  <img width="998" alt="Web app" src="https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/d1f856c5-de5e-4944-b551-1939a0cb6ea5">
+
+# 7. Conclusion
+
+- The goal of this research is to create a machine learning model that can predict wine quality based on its chemical attributes. The workflow consists of data pretreatment, exploratory data analysis (EDA), feature engineering, model selection, hyperparameter tweaking, and evaluation. A Random Forest classifier is effective in predicting wine quality and differtiating between poor and good quality wines, which yielded good performance. The model was then implemented using Streamlit to construct a web application that allows users to enter chemical characteristics from a wine sample and obtain a quality forecast. As we advance, refining these models with more complex datasets and newer technologies presents an exciting opportunity. Let's embrace the future of technology in crafting the perfect wine.
+
+  ### 7.1 Potential Application
+   - The primary application is in the wine industry, where it can be utilized by vintners to promptly evaluate the quality of wine batches depending on chemical composition, thereby guaranteeing consistent product quality. It can also prove beneficial for quality control laboratories seeking to automate and streamline testing procedures, potentially resulting in cost reductions and efficiency enhancements. Automating certain steps through machine learning modeling may help to objectively and reproducibly assess wine quality while eliminating subjective human factors from consideration. This could help to standardize testing and allow for easy comparison of analysis results over time. Ultimately, consistently delivering high quality wines remains a top priority for any winery. The methods explored here offer wine producers a valuable tool in maintaining the highest product standards for their customers.
+
+  ### 7.2 Limitations
+  - **Data Imbalance** :The dataset utilized for model training have exhibited data imbalance, where the distribution of data points across the target variable's classes was uneven. This could potentially skew the model's predictions towards the majority class, diminishing its ability to accurately predict the minority class. Further analysis is needed to assess whether the dataset exhibited class imbalance and, if so, whether appropriate techniques such as oversampling or undersampling were applied to address it.
+
+  - **Feature Importance**: It is possible that not all of the features, or variables, included in the dataset provided equal value in predicting the target variable of wine quality. The model building process may have attributed undue weight to certain features that were less relevant or informative, while overlooking features of greater importance. A thorough analysis of each feature's predictive power could help in determining if the model relied too heavily on less impactful inputs.
+
+  - **Overfitting**: Even after implementing regularization and validation techniques intended to prevent overfitting, there remains a risk that the trained model may not generalize conclusively to new, unseen data due to overfitting its predictions to the idiosyncrasies of the original training data. Further testing on hold-out evaluation datasets is needed to evaluate the model's true ability to generalize.
+
+  - **Limited Features**: The model developed could only take into account the features, or variables, that were included in the original dataset. Other factors known to influence wine quality, such as grape varietal, vinification processes, and terroir characteristics, were not available to the model. Incorporating additional relevant data could potentially result in a more holistic and higher performing model.
+    
+  ### 7.3 Lessons learned
+  
+  - **Data Preprocessing:** The importance of thorough data cleaning and preprocessing cannot be overstated, as it significantly impacts model performance. Prior to model training, data should be examined for missing values, outliers, inconsistencies or other anomalies. Appropriate techniques such as normalization, feature engineering and feature selection should then be applied to ensure the data is clean, consistent and suitable for accurate modeling. Thorough preprocessing helps reduce noise in the data and results in more robust and generalizable models.
+
+  - **Model Evaluation:** Evaluating models using multiple metrics is crucial to obtain a comprehensive understanding of their performance. Common metrics like accuracy, precision, recall and F1 score provide insight into a model's predictions. However, to assess overall effectiveness, it is best practice to examine multiple complementary metrics. Additional analyzes such as confusion matrices, ROC curves can also uncover important information about how a model is performing that single-value metrics may not reveal. Comprehensive evaluation allows practitioners to determine the most suitable model for a given problem or use case.
+
+  - **Hyperparameter Tuning:** Effective hyperparameter tuning can significantly improve model performance, though it can be computationally expensive. Hyperparameters control aspects of model training like complexity, regularization and optimization technique. Their values should be carefully selected to avoid under or overfitting. Grid search, random search and Bayesian optimization are common techniques for automated tuning. While computationally intensive, taking the time to tune hyperparameters using validation data often results in enhanced generalization and real-world effectiveness. 
+
+  ### 7.4 Future Research Direction
+  - **Feature Expansion for Improved Model Accuracy:** The inclusion of additional features related to wine quality has the potential to improve the accuracy of our predictive models. Capturing information about factors like grape variety, region of origin, and aging process may provide useful context when assessing characteristics such as taste and price. By expanding the feature set to incorporate more qualitative elements involved in wine production, we aim to develop models with a more nuanced understanding of this complex domain.
+
+  - **Evaluation of Advanced Modeling Techniques:** While our current models have shown promising results, exploring more sophisticated approaches may yield even better predictive performance. Techniques like neural networks and ensemble methods have demonstrated strength on related problems and warrant further investigation. These advanced algorithms may be able to capture non-linear relationships and interdependencies in a way that could push the boundaries of what is achievable with our existing models.
+
+  - **Implementing MLOps for Streamlined Model Deployment and Maintenance:** To fully capitalize on our modeling efforts, it is important to implement MLOps practices that facilitate reliable, efficient model operations. This includes automating end-to-end data and model workflows, setting up continuous integration and deployment pipelines, and putting in place monitoring systems. Adopting an MLOps mindset will help ensure model outputs can be consistently reproduced and integrated into our workflows as we expand our capabilities to new platforms and problem domains over time.
+
+
 # References
--  https://xgboost.readthedocs.io/en/latest/
+-  Scikit-learn Documentation: https://scikit-learn.org/stable/
+-  Streamlit Documentation: https://docs.streamlit.io/
+-  XGBoost Documentation: https://xgboost.readthedocs.io/en/stable/
+-  Wine Quality Dataset: P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.
+-  GridSearchCV: https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
