@@ -186,8 +186,8 @@ Various machine learning algorithms are tested within this pipeline to identify 
 
 |   Class  | Precision | Recall | F1-Score | Support |
 |-----------|-----------|--------|----------|---------|
-| Red   | 0.69      | 0.56   | 0.62     | 8422    |
-| White   | 0.77      | 0.85   | 0.81     | 14317   |
+| Poor Quality Wine    | 0.69      | 0.56   | 0.62     | 8422    |
+| Good Quality Wine    | 0.77      | 0.85   | 0.81     | 14317   |
 | Accuracy  |           |        | 0.74     | 22739   |
 | Macro Avg | 0.73      | 0.70   | 0.71     | 22739   |
 | Weighted Avg | 0.74   | 0.74   | 0.73     | 22739   |
@@ -198,8 +198,8 @@ Various machine learning algorithms are tested within this pipeline to identify 
 
 |      Class     | Precision | Recall | F1-Score | Support |
 |-----------|-----------|--------|----------|---------|
-| Red   | 0.69      | 0.56   | 0.62     | 3610    |
-| White   | 0.77      | 0.85   | 0.81     | 6136    |
+| Poor Quality Wine    | 0.69      | 0.56   | 0.62     | 3610    |
+| Good Quality Wine    | 0.77      | 0.85   | 0.81     | 6136    |
 | Accuracy  |           |        | 0.75     | 9746    |
 | Macro Avg | 0.73      | 0.71   | 0.72     | 9746    |
 | Weighted Avg | 0.74   | 0.75   | 0.74     | 9746    |
@@ -227,13 +227,119 @@ Various machine learning algorithms are tested within this pipeline to identify 
   
       In summary, while the model demonstrates some effectiveness in identifying instances of "positive" or "good quality"         wine, there is room for improvement, particularly in reducing false positives and false negatives.
 
+
+**Area under the Curve**
+
 ![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/d9cd05ce-b104-443e-8fd5-d211dd8ab30e)
 
 - An AUC score of 0.81 suggests that the model has some predictive capability, but further optimization or adjustments may be necessary to enhance its performance, especially aming at higher accuracy.
 
+**b. XGBClassifier**
+
+XGBoost Classifier (XGBClassifier) can estimate wine quality using its sophisticated gradient boosting method. Initially, the dataset goes through preparation stages including managing missing values and encoding categorical variables. The XGBClassifier model is then trained using features such as acidity, sugar content, and pH. During training, XGBoost iteratively constructs numerous decision trees, each fixing the faults of the preceding one. It improves the model's performance by minimizing a predetermined loss function, therefore efficiently capturing complicated patterns in the data. The model's hyperparameters, such as the learning rate and maximum tree depth, may be fine-tuned using approaches such as GridSearchCV to improve forecast accuracy. Finally, the trained XGBClassifier can reliably determine the quality of wines based on their chemical makeup.
+
+**Classification Report on Training Data of XGBClassifier**
+
+|  Class  | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| Poor Quality Wine   | 0.92      | 0.90   | 0.91     | 8422    |
+| Good Quality Wine    | 0.94      | 0.95   | 0.95     | 14317   |
+| Accuracy  |           |        | 0.93     | 22739   |
+| Macro Avg | 0.93      | 0.93   | 0.93     | 22739   |
+| Weighted Avg | 0.93   | 0.93   | 0.93     | 22739   |
+
+**Classification Report on Testing Data of XGBClassifier**
+
+| Class | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| Poor Quality Wine   | 0.90      | 0.88   | 0.89     | 3610    |
+| Good Quality Wine   | 0.93      | 0.94   | 0.94     | 6136    |
+| Accuracy  |           |        | 0.92     | 9746    |
+| Macro Avg | 0.91      | 0.91   | 0.91     | 9746    |
+| Weighted Avg | 0.92   | 0.92   | 0.92     | 9746    |
+
+**Confusion Matrix of XGBClassifier**
+
+![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/6aec4ee9-6e9b-4810-92db-1c0382830a9d)
+
+- **True Positives (TP):** 5723
+
+    The model correctly predicted 5723 instances of "Good quality" wine. These are cases where the wine was actually of the good quality, and the model correctly identified it as such.
+
+- **False Positives (FP):** 446
+
+    The model incorrectly predicted 446 instances of "Poor quality" wine as "Good quality" wine. These are cases where the wine was not actually of the good quality, but the model mistakenly classified it as such.
+
+- **True Negatives (TN):** 3164
+
+    The model correctly predicted 3164 instances of "Poor quality" wine. These are cases where the wine was not of the good quality, and the model correctly identified it as such.
+
+- **False Negatives (FN):** 413
+
+    The model incorrectly predicted 413 instances of "Good quality" wine as "Poor quality" wine. These are cases where the wine was actually of the good quality, but the model failed to identify it correctly.
+
+    - Interpreting these values in the context of wine quality, we can see that the model has a relatively high number of true positives, indicating that it is effective at identifying wines of the good quality. However, it also has a noticeable number of false positives and false negatives, suggesting that there are areas for improvement in its ability to distinguish between wines of different qualities. Further analysis, model refinement, and possibly the incorporation of additional features could help improve the model's performance in predicting wine quality accurately.
+
+**Area under the Curve**
+
+  ![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/ae76daba-b26e-4277-ae39-b8be67acc943)
+
+  - AUC score of 0.9713 implies that the model has a high true positive rate while maintaining a low false positive rate across different threshold settings. This indicates that the model is performing exceptionally well in correctly classifying instances of both classes and is making very few mistakes in misclassifying instances.
+
+  ### c. Random Forest Classifier
+  - The Random Forest Classifier uses ensemble learning to estimate wine quality. Initially, the dataset is preprocessed to accommodate missing values and encode categorical characteristics. The Random Forest model is then trained using characteristics such as acidity, sugar concentration, and pH. During training, the classifier generates numerous decision trees from random subsets of the data and features, guaranteeing variety and decreasing overfitting. Each tree separately forecasts wine quality, and the ultimate prediction is established by pooling all trees' votes. The model's hyperparameters, such as the number of trees and maximum depth, may be tuned using GridSearchCV. Overall, the Random Forest Classifier provides robust and reliable predictions about wine quality based on its chemical makeup.
+
+**Classification Report on Training Data**
+
+|  Class  | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| Poor Quality Wine  | 1.00      | 1.00   | 1.00     | 8422    |
+| Good Quality Wine   | 1.00      | 1.00   | 1.00     | 14317   |
+| Accuracy  |           |        | 1.00     | 22739   |
+| Macro Avg | 1.00      | 1.00   | 1.00     | 22739   |
+| Weighted Avg | 1.00   | 1.00   | 1.00     | 22739   |
 
 
-- Among the tested algorithms, the RandomForest classifier outperforms others in terms of accuracy and robustness.
+   **Classification Report on Testing Data Random Forest Classifier**
+
+|  Class   | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| Poor Quality Wine   | 1.00      | 0.99   | 0.99     | 3610    |
+| Good Quality Wine    | 1.00      | 1.00   | 1.00     | 6136    |
+| Accuracy  |           |        | 1.00     | 9746    |
+| Macro Avg | 1.00      | 0.99   | 1.00     | 9746    |
+| Weighted Avg | 1.00   | 1.00   | 1.00     | 9746    |
+
+### Confusion Matrix of Random Forest Classifier
+![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/a9fff0c7-15b5-4ac5-a5ad-f6ce5a60b0a7)
+
+  - **True Positives (TP):** 6119
+  
+      The model correctly predicted 6119 instances of "good quality" wine. These are cases where the wine was actually of good quality, and the model correctly identified it as such.
+  
+  - **False Positives (FP):** 17
+  
+      The model incorrectly predicted 17 instances of "poor quality" wine as "good quality" wine. These are cases where the wine was not actually of good quality, but the model mistakenly classified it as such.
+  
+  - **True Negatives (TN):** 3593
+      
+      The model correctly predicted 3593 instances of "poor quality" wine. These are cases where the wine was not of good quality, and the model correctly identified it as such.
+  
+  - **False Negatives (FN):** 17
+      
+      The model incorrectly predicted 17 instances of "good quality" wine as "poor quality" wine. These are cases where the wine was actually of good quality, but the model failed to identify it correctly.
+  
+    This confusion matrix still demonstrates a highly accurate model with very few misclassifications. It effectively identifies both "good quality" and "poor quality" wines, with only a small number of false positives and false negatives. Overall, the model appears to be reliable for classifying wine quality.
+
+### Area under the Curve
+
+![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/6e5ea8f0-b689-47d8-be3b-8873dc84c483)
+
+  - Given the high AUC score of 1.0, it suggests that the model has strong predictive power and is capable of making accurate classifications. This indicates that the model is likely well-calibrated and provides reliable predictions for the given task of classifying wine quality.
+  
+  - Among all other models Random forest model has showed better performance with 100% F1 score over the Logistic Regression and XGBoost
+
+- In summary, Random Forest achieved perfect performance, XGBoost performed slightly less accurately but still well, while Logistic Regression showed the lowest accuracy among the three classifiers. Depending on the F1 score , one might choose the Random Forest as best performing model.
   
 
 **Hyperparameter Tuning:**
@@ -245,3 +351,6 @@ Various machine learning algorithms are tested within this pipeline to identify 
  - The final model's performance is evaluated using the f1 score, a metric that balances precision and recall, providing a comprehensive measure of the model's predictive power.
 
 This structured approach ensures that the wine quality prediction model is robust, well-tuned, and capable of making accurate predictions on new data.
+
+# References
+-  https://xgboost.readthedocs.io/en/latest/
