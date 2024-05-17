@@ -1,3 +1,7 @@
+
+<img width="787" alt="Main" src="https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/7be5bb19-3c5e-47cb-be02-9c30f8a167c4">
+
+
 # 1. Title and Author
 
 ### Project Title
@@ -79,3 +83,135 @@ The data contains 12 wine features or ingredients based upon which the quality o
 - Quality
 ### Which variables/columns may be selected as features/predictors for your ML models?
 - Fixed acidity, Volatile acidity ,Citric acid, Residual,Sugar, Chlorides, Free sulfur dioxide, Total sulfur dioxide, Density, pH,Sulphates, Alcohol, Type
+
+# 4.Exploratory Data Analysis (EDA)
+## Data Cleaning
+
+###  a. Check on Missing values
+| Variable              | No. of Null Values |
+|-----------------------|-------|
+| fixed acidity         | 0     |
+| volatile acidity      | 0     |
+| citric acid           | 0     |
+| residual sugar        | 0     |
+| chlorides             | 0     |
+| free sulfur dioxide   | 0     |
+| total sulfur dioxide  | 0     |
+| density               | 0     |
+| pH                    | 0     |
+| sulphates             | 0     |
+| alcohol               | 0     |
+| quality               | 0     |
+| Type                  | 0     |
+- From the above data we can say that there are no signs of null values in the data set
+### b. Summary Statistics
+| Statistics | fixed acidity | volatile acidity | citric acid | residual sugar | chlorides | free sulfur dioxide | total sulfur dioxide | density | pH   | sulphates | alcohol | quality | Type |
+|-----------|---------------|------------------|-------------|----------------|-----------|---------------------|----------------------|---------|------|-----------|---------|---------|------|
+| count     | 32485.000000  | 32485.000000     | 32485.00000 | 32485.000000   | 32485.000 | 32485.000000        | 32485.000000         | 32485.00| 32485| 32485.000 | 32485.00| 32485.00| 32485|
+| mean      | 7.214736      | 0.340122         | 0.318324    | 5.438696       | 0.056009  | 30.458258           | 115.656303           | 0.994719| 3.219| 0.531500  | 10.48069| 5.81169| 0.752|
+| std       | 1.308216      | 0.164912         | 0.145152    | 4.799221       | 0.034503  | 17.608076           | 56.456074            | 0.003015| 0.161| 0.148712  | 1.190661| 0.87247| 0.431|
+| min       | 3.800000      | 0.080000         | 0.000000    | 0.600000       | 0.009000  | 1.000000            | 6.000000             | 0.987110| 2.720| 0.220000  | 8.000000| 3.00000| 0.000|
+| 25%       | 6.400000      | 0.230000         | 0.250000    | 1.800000       | 0.038000  | 17.000000           | 77.000000            | 0.992400| 3.110| 0.430000  | 9.500000| 5.00000| 1.000|
+| 50%       | 7.000000      | 0.290000         | 0.310000    | 3.000000       | 0.047000  | 29.000000           | 118.000000           | 0.994900| 3.210| 0.510000  | 10.30000| 6.00000| 1.000|
+| 75%       | 7.700000      | 0.410000         | 0.390000    | 8.100000       | 0.065000  | 41.000000           | 156.000000           | 0.997000| 3.320| 0.600000  | 11.30000| 6.00000| 1.000|
+| max       | 15.900000     | 1.580000         | 1.660000    | 65.800000      | 0.611000  | 289.000000          | 440.000000           | 1.038980| 4.010| 2.000000  | 14.90000| 9.00000| 1.000|
+
+Summary statistics table of various features related to wine quality.
+
+- **Fixed Acidity:** The average fixed acidity of the wine samples is approximately 7.21, with a standard deviation of 1.31. The minimum and maximum values are 3.8 and 15.9, respectively.
+
+- **Volatile Acidity:** The average volatile acidity is around 0.34, with a standard deviation of 0.16. The values range from 0.08 to 1.58.
+
+- **Citric Acid:** The mean citric acid content is approximately 0.32, with a standard deviation of 0.15. The minimum value is 0, and the maximum value is 1.66.
+
+- **Residual Sugar:** The average residual sugar content is about 5.44, with a standard deviation of 4.80. The values range from 0.6 to 65.8.
+
+- **Chlorides:** The mean chloride concentration is approximately 0.056, with a standard deviation of 0.035. The minimum and maximum values are 0.009 and 0.611, respectively.
+
+- **Free Sulfur Dioxide:** The average free sulfur dioxide content is around 30.46, with a standard deviation of 17.61. Values range from 1 to 289.
+
+- **Total Sulfur Dioxide:** The mean total sulfur dioxide content is about 115.66, with a standard deviation of 56.46. The values range from 6 to 440.
+
+- **Density:** The average density of the wine samples is approximately 0.995, with a standard deviation of 0.003. The density ranges from 0.987 to 1.039.
+
+- **pH:** The mean pH level is around 3.22, with a standard deviation of 0.16. The values range from 2.72 to 4.01.
+
+- **Sulphates:** The average sulphate concentration is about 0.53, with a standard deviation of 0.15. The minimum and maximum values are 0.22 and 2.0, respectively.
+
+- **Alcohol:** The mean alcohol content is approximately 10.48%, with a standard deviation of 1.19. Values range from 8 to 14.9.
+
+- **Quality:** The quality score of the wine samples has a mean of around 5.81, with a standard deviation of 0.87. The values range from 3 to 9.
+
+- **Type:** This column indicates the type of wine, with 1(White wine) representing one type and 0(Red wine) representing another type. The majority of the samples seem to belong to type 1, as indicated by the mean value being close to 1.
+
+  ## Data Preprocessing
+  
+  For a number of reasons, standardizing the data in the wine dataset is essential. First of all, it guards against biases favoring variables with wider ranges or units by guaranteeing that variables with varying scales and units contribute equally to the study. Second, standardization makes it simpler to compare and understand coefficients in statistical models, which in turn makes determining the relative significance of various characteristics easier. Additionally, by lessening the influence of outliers and enhancing convergence, standardizing the data can enhance the effectiveness of machine learning systems. Standardized coefficients, which indicate the change in the response variable per standard deviation change in the predictor, further improve the interpretability of the results. Overall, standardizing the data in the wine dataset enhances the reliability, interpretability, and generalizability of analyses and model, thus preventing data skewness that might be caused by the range of values.
+  
+# 5. Model Training
+
+### a. models used for predictive analytics
+- Logistic Regression
+- XGboost
+- Random Forest
+
+### b. Packages Used:
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Plotly
+- Scikit-learn
+- XGBoost
+
+### c. Model workflow
+The wine quality prediction model follows a systematic machine learning workflow to ensure robust and accurate predictions. Here is a summary of the key steps involved:
+
+**Data Splitting:**
+
+- The dataset is split into training and testing sets with a 70:30 ratio, ensuring a sufficient amount of data for both training the model and evaluating its performance.
+
+**Pipeline Creation:**
+
+- A machine learning pipeline is constructed using StandardScaler to standardize the features. This scaling ensures that all features contribute equally to the model and improves the model's performance.
+Various machine learning algorithms are tested within this pipeline to identify the best performing model.
+
+**Model Selection:**
+
+  **a. Logistic Regression**
+  
+ - Logistic regression can be effectively used for wine quality prediction by modeling the relationship between various features (such as acidity, sugar content, pH, etc.) and the binary target variable indicating wine quality (e.g., good or poor quality). As a binary classifier, logistic regression estimates the probability that a given wine sample belongs to a particular quality class. The model applies the logistic function to a linear combination of input features, producing an output between 0 and 1, which can be interpreted as the probability of the wine being of good quality.
+      
+  **Classification Report on Training Data**
+
+|   Class  | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| Red   | 0.69      | 0.56   | 0.62     | 8422    |
+| White   | 0.77      | 0.85   | 0.81     | 14317   |
+| Accuracy  |           |        | 0.74     | 22739   |
+| Macro Avg | 0.73      | 0.70   | 0.71     | 22739   |
+| Weighted Avg | 0.74   | 0.74   | 0.73     | 22739   |
+
+
+**Classification Report on Testing Data**
+
+|      Class     | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| Red   | 0.69      | 0.56   | 0.62     | 3610    |
+| White   | 0.77      | 0.85   | 0.81     | 6136    |
+| Accuracy  |           |        | 0.75     | 9746    |
+| Macro Avg | 0.73      | 0.71   | 0.72     | 9746    |
+| Weighted Avg | 0.74   | 0.75   | 0.74     | 9746    |
+
+- Among the tested algorithms, the RandomForest classifier outperforms others in terms of accuracy and robustness.
+  
+
+**Hyperparameter Tuning:**
+
+ - GridSearchCV with a 5-fold cross-validation (KFold) is used to find the optimal hyperparameters for the RandomForest classifier. This method helps in ensuring that the model generalizes well to unseen data and avoids overfitting.
+
+**Model Evaluation:**
+
+ - The final model's performance is evaluated using the f1 score, a metric that balances precision and recall, providing a comprehensive measure of the model's predictive power.
+
+This structured approach ensures that the wine quality prediction model is robust, well-tuned, and capable of making accurate predictions on new data.
