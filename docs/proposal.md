@@ -181,7 +181,7 @@ Various machine learning algorithms are tested within this pipeline to identify 
   **a. Logistic Regression**
   
  - Logistic regression can be effectively used for wine quality prediction by modeling the relationship between various features (such as acidity, sugar content, pH, etc.) and the binary target variable indicating wine quality (e.g., good or poor quality). As a binary classifier, logistic regression estimates the probability that a given wine sample belongs to a particular quality class. The model applies the logistic function to a linear combination of input features, producing an output between 0 and 1, which can be interpreted as the probability of the wine being of good quality.
-      
+
   **Classification Report on Training Data**
 
 |   Class  | Precision | Recall | F1-Score | Support |
@@ -193,6 +193,7 @@ Various machine learning algorithms are tested within this pipeline to identify 
 | Weighted Avg | 0.74   | 0.74   | 0.73     | 22739   |
 
 
+
 **Classification Report on Testing Data**
 
 |      Class     | Precision | Recall | F1-Score | Support |
@@ -202,6 +203,35 @@ Various machine learning algorithms are tested within this pipeline to identify 
 | Accuracy  |           |        | 0.75     | 9746    |
 | Macro Avg | 0.73      | 0.71   | 0.72     | 9746    |
 | Weighted Avg | 0.74   | 0.75   | 0.74     | 9746    |
+
+
+**Confusion Matrix of Logestic Regression**
+
+  ![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/0cf4e42a-b069-4815-ac89-9aca3d637aa8)
+  
+  - **True Positives (TP):** 5237
+  
+      These are instances where the model correctly predicted the positive class. In this case, it correctly identified 5198 instances as "positive" or "good quality" wine.
+  
+  - **False Positives (FP):** 1572
+  
+      These are instances where the model incorrectly predicted the positive class when the actual class was negative. In other words, the model predicted 1567 instances as "positive" or "good quality" wine when they were actually "negative" or "poor quality" wine.
+  
+  - **True Negatives (TN):** 2038
+  
+      These are instances where the model correctly predicted the negative class. It correctly identified 2043 instances as "negative" or "poor quality" wine.
+  
+  - **False Negatives (FN):** 899
+  
+      These are instances where the model incorrectly predicted the negative class when the actual class was positive. In other words, the model predicted 938 instances as "negative" or "poor quality" wine when they were actually "positive" or "good quality" wine.
+  
+      In summary, while the model demonstrates some effectiveness in identifying instances of "positive" or "good quality"         wine, there is room for improvement, particularly in reducing false positives and false negatives.
+
+![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/d9cd05ce-b104-443e-8fd5-d211dd8ab30e)
+
+- An AUC score of 0.81 suggests that the model has some predictive capability, but further optimization or adjustments may be necessary to enhance its performance, especially aming at higher accuracy.
+
+
 
 - Among the tested algorithms, the RandomForest classifier outperforms others in terms of accuracy and robustness.
   
