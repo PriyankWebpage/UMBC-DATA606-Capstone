@@ -8,7 +8,7 @@ from PIL import Image
 
 
 
-with open('finalized_model.pkl', 'rb') as file:
+with open('app/finalized_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 
