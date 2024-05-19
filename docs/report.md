@@ -28,6 +28,8 @@ Presentation : [WnieQuality](https://github.com/PriyankWebpage/UMBC-DATA606-Caps
 
 Web App : [Application](https://winequalitypredicitions.streamlit.app)
 
+Jupyter Notebook [Code](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/blob/main/notebooks/final_notebook.ipynb)
+
 # 2. Background
 
 In the field of viticulture and oenology, wine quality is a critical factor in determining market value and customer happiness. Winemakers are continuously looking for ways to improve and preserve the quality of their goods. To this purpose, predictive modeling may be used to forecast wine quality based on physicochemical and sensory characteristics.
