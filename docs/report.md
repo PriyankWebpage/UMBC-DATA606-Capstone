@@ -24,7 +24,7 @@ Linkedin Profile: [Priyank Pannem](https://www.linkedin.com/in/priyankpannem)
 
 YouTube Video: 
 
-Presentation :
+Presentation : https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/blob/main/docs/Wine%20Qualtity.pdf
 
 # 2. Background
 
