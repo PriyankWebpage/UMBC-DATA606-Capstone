@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 # Load the model
-with open('finalized_model.pkl', 'rb') as file:
+with open('app/finalized_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Prediction function
