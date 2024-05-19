@@ -16,28 +16,28 @@ def main():
     st.title("Wine Quality Classifier Web App")
 
     # CSS to align everything to the left
-    # css_code = """
-    # <style>
-    # html, body, [class*="View"] {
-    #     margin: 0px !important;
-    #     padding: 0px !important;
-    # }
-    # .stApp {
-    #     background-image: url("https://wallpapercave.com/wp/wp3982250.jpg");
-    #     background-size: cover;
-    #     background-position: right;
-    #     background-repeat: no-repeat;
-    # }
-    # .css-1d391kg, .css-18e3th9 {
-    #     padding-left: 100;
-    #     padding-right: -100;
-    #     margin-left: 0!important;
-    #     width: 100%!important;
-    #     max-width: none!important;
-    # }
-    # </style>
-    # """
-    # st.markdown(css_code, unsafe_allow_html=True)
+    css_code = """
+    <style>
+    html, body, [class*="View"] {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .stApp {
+        background-image: url("https://wallpapercave.com/wp/wp3982250.jpg");
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    .css-1d391kg, .css-18e3th9 {
+        padding-left: 100;
+        padding-right: -100;
+        margin-left: 0!important;
+        width: 100%!important;
+        max-width: none!important;
+    }
+    </style>
+    """
+    st.markdown(css_code, unsafe_allow_html=True)
 
     # Input fields
     cols = st.columns(2)
