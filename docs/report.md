@@ -28,7 +28,7 @@ Presentation : [WnieQuality](https://github.com/PriyankWebpage/UMBC-DATA606-Caps
 
 Web App : [Application](https://winequalitypredicitions.streamlit.app)
 
-Jupyter Notebook [Code](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/blob/main/notebooks/final_notebook.ipynb)
+Jupyter Notebook : [Code](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/blob/main/notebooks/final_notebook.ipynb)
 
 # 2. Background
 
