@@ -22,7 +22,7 @@ GitHub Profile: [PriyankWebpage](https://github.com/PriyankWebpage)
 
 Linkedin Profile: [Priyank Pannem](https://www.linkedin.com/in/priyankpannem)
 
-YouTube Video: 
+YouTube Video: [Presentation Video](https://youtu.be/8IuXdXRImFY)
 
 Presentation : [WnieQuality](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/blob/main/docs/Wine%20Qualtity.pdf)
 
