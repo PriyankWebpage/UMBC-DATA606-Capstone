@@ -378,19 +378,19 @@ Various machine learning algorithms are tested within this pipeline to identify 
   
   - **True Positives (TP):** 5237
   
-      These are instances where the model correctly predicted the positive class. In this case, it correctly identified 5198 instances as "positive" or "good quality" wine.
+      These are instances where the model correctly predicted the positive class. In this case, it correctly identified 5237 instances as "positive" or "good quality" wine.
   
   - **False Positives (FP):** 1572
   
-      These are instances where the model incorrectly predicted the positive class when the actual class was negative. In other words, the model predicted 1567 instances as "positive" or "good quality" wine when they were actually "negative" or "poor quality" wine.
+      These are instances where the model incorrectly predicted the positive class when the actual class was negative. In other words, the model predicted 1572 instances as "positive" or "good quality" wine when they were actually "negative" or "poor quality" wine.
   
   - **True Negatives (TN):** 2038
   
-      These are instances where the model correctly predicted the negative class. It correctly identified 2043 instances as "negative" or "poor quality" wine.
+      These are instances where the model correctly predicted the negative class. It correctly identified 2038 instances as "negative" or "poor quality" wine.
   
   - **False Negatives (FN):** 899
   
-      These are instances where the model incorrectly predicted the negative class when the actual class was positive. In other words, the model predicted 938 instances as "negative" or "poor quality" wine when they were actually "positive" or "good quality" wine.
+      These are instances where the model incorrectly predicted the negative class when the actual class was positive. In other words, the model predicted 899 instances as "negative" or "poor quality" wine when they were actually "positive" or "good quality" wine.
   
       In summary, while the model demonstrates some effectiveness in identifying instances of "positive" or "good quality"         wine, there is room for improvement, particularly in reducing false positives and false negatives.
 
@@ -429,21 +429,21 @@ XGBoost Classifier (XGBClassifier) can estimate wine quality using its sophistic
 
 ![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/6aec4ee9-6e9b-4810-92db-1c0382830a9d)
 
-- **True Positives (TP):** 5723
+- **True Positives (TP):** 5774
 
-    The model correctly predicted 5723 instances of "Good quality" wine. These are cases where the wine was actually of the good quality, and the model correctly identified it as such.
+    The model correctly predicted 5774 instances of "Good quality" wine. These are cases where the wine was actually of the good quality, and the model correctly identified it as such.
 
-- **False Positives (FP):** 446
+- **False Positives (FP):** 425
 
-    The model incorrectly predicted 446 instances of "Poor quality" wine as "Good quality" wine. These are cases where the wine was not actually of the good quality, but the model mistakenly classified it as such.
+    The model incorrectly predicted 425 instances of "Poor quality" wine as "Good quality" wine. These are cases where the wine was not actually of the good quality, but the model mistakenly classified it as such.
 
-- **True Negatives (TN):** 3164
+- **True Negatives (TN):** 3185
 
-    The model correctly predicted 3164 instances of "Poor quality" wine. These are cases where the wine was not of the good quality, and the model correctly identified it as such.
+    The model correctly predicted 3185 instances of "Poor quality" wine. These are cases where the wine was not of the good quality, and the model correctly identified it as such.
 
-- **False Negatives (FN):** 413
+- **False Negatives (FN):** 362
 
-    The model incorrectly predicted 413 instances of "Good quality" wine as "Poor quality" wine. These are cases where the wine was actually of the good quality, but the model failed to identify it correctly.
+    The model incorrectly predicted 362 instances of "Good quality" wine as "Poor quality" wine. These are cases where the wine was actually of the good quality, but the model failed to identify it correctly.
 
     - Interpreting these values in the context of wine quality, we can see that the model has a relatively high number of true positives, indicating that it is effective at identifying wines of the good quality. However, it also has a noticeable number of false positives and false negatives, suggesting that there are areas for improvement in its ability to distinguish between wines of different qualities. Further analysis, model refinement, and possibly the incorporation of additional features could help improve the model's performance in predicting wine quality accurately.
 
@@ -480,21 +480,21 @@ XGBoost Classifier (XGBClassifier) can estimate wine quality using its sophistic
 **Confusion Matrix of Random Forest Classifier**
 ![image](https://github.com/PriyankWebpage/UMBC-DATA606-Capstone/assets/65448205/a9fff0c7-15b5-4ac5-a5ad-f6ce5a60b0a7)
 
-  - **True Positives (TP):** 6119
+  - **True Positives (TP):** 6121
   
-      The model correctly predicted 6119 instances of "good quality" wine. These are cases where the wine was actually of good quality, and the model correctly identified it as such.
+      The model correctly predicted 6121 instances of "good quality" wine. These are cases where the wine was actually of good quality, and the model correctly identified it as such.
   
-  - **False Positives (FP):** 17
+  - **False Positives (FP):** 28
   
-      The model incorrectly predicted 17 instances of "poor quality" wine as "good quality" wine. These are cases where the wine was not actually of good quality, but the model mistakenly classified it as such.
+      The model incorrectly predicted 28 instances of "poor quality" wine as "good quality" wine. These are cases where the wine was not actually of good quality, but the model mistakenly classified it as such.
   
-  - **True Negatives (TN):** 3593
+  - **True Negatives (TN):** 3582
       
-      The model correctly predicted 3593 instances of "poor quality" wine. These are cases where the wine was not of good quality, and the model correctly identified it as such.
+      The model correctly predicted 3582 instances of "poor quality" wine. These are cases where the wine was not of good quality, and the model correctly identified it as such.
   
-  - **False Negatives (FN):** 17
+  - **False Negatives (FN):** 15
       
-      The model incorrectly predicted 17 instances of "good quality" wine as "poor quality" wine. These are cases where the wine was actually of good quality, but the model failed to identify it correctly.
+      The model incorrectly predicted 15 instances of "good quality" wine as "poor quality" wine. These are cases where the wine was actually of good quality, but the model failed to identify it correctly.
   
     This confusion matrix still demonstrates a highly accurate model with very few misclassifications. It effectively identifies both "good quality" and "poor quality" wines, with only a small number of false positives and false negatives. Overall, the model appears to be reliable for classifying wine quality.
 
